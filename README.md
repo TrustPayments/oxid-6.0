@@ -1,6 +1,8 @@
+> This plugin supports the Trust Enterprise Platform which can be identified by the URL for the platform ep.trustpayments.com.
+
 # OXID 6.X
 
-v1.0.26, 2021-3
+v1.0.27, 2021-7
 
 This repository contains the OXID  Trust Payments payment module that enables the shop to process payments with [Trust Payments](https://www.trustpayments.com/).
 
@@ -17,8 +19,8 @@ Support queries can be issued on the [Trust Payments support site](https://www.t
 
 ## Documentation
 
-* [English](https://plugin-documentation.ep.trustpayments.com/TrustPayments/oxid-6.0/1.0.26/docs/en/documentation.html)
+* [English](https://plugin-documentation.ep.trustpayments.com/TrustPayments/oxid-6.0/1.0.27/docs/en/documentation.html)
 
 ## License
 
-Please see the [license file](https://github.com/TrustPayments/oxid-6.0/blob/1.0.26/LICENSE) for more information.
+Please see the [license file](https://github.com/TrustPayments/oxid-6.0/blob/1.0.27/LICENSE) for more information.
