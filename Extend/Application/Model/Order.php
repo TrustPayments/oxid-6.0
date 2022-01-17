@@ -80,14 +80,10 @@ class Order extends Order_parent {
 					"Attempted to call " . __METHOD__ . " on non-TrustPayments order {$this->getId()}, skipping.");
 			return;
 		}
-		$basket = $this->getTrustPaymentsTransaction()->getTempBasket();
+		$basket = $this->getTrustPaymentsBasket();
 		$basket->onUpdate();
 		$basket->calculateBasket();
 		$res = $this->_sendOrderByEmail($this->getOrderUser(), $basket, $this->getPaymentType());
-		if ($res === self::ORDER_STATE_OK) {
-			$this->getTrustPaymentsTransaction()->setTempBasket(null);
-			$this->getTrustPaymentsTransaction()->save();
-		}
 	}
 
 	public function setTrustPaymentsPaid(){
