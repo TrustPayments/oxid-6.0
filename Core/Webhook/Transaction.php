@@ -57,7 +57,18 @@ class Transaction extends AbstractOrderRelated
      */
     protected function processOrderRelatedInner(\OxidEsales\Eshop\Application\Model\Order $order, $entity)
     {
+        $finalStates = [
+            TransactionState::FAILED,
+            TransactionState::VOIDED,
+            TransactionState::DECLINE,
+            TransactionState::FULFILL
+        ];
+
         /* @var $entity \TrustPayments\Sdk\Model\Transaction */
+        if (in_array($entity->getState(), $finalStates)) {
+            return false;
+        }
+
         /* @var $order \Tru\TrustPayments\Extend\Application\Model\Order */
         if ($entity && $entity->getState() !== $order->getTrustPaymentsTransaction()->getState()) {
             $cancel = false;
