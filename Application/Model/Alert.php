@@ -11,7 +11,6 @@
 
 namespace Tru\TrustPayments\Application\Model;
 
-;
 
 /**
  * Class Alert.
@@ -42,15 +41,5 @@ class Alert
     public static function loadAll() {
         $query = "SELECT `TRUKEY`, `TRUCOUNT`, `TRUFUNC`, `TRUTARGET` FROM `truTrustPayments_alert`";
         return \OxidEsales\Eshop\Core\DatabaseProvider::getDb()->getAll($query);
-    }
-
-    /**
-     * Class constructor.
-     */
-    public function __construct()
-    {
-        parent::__construct();
-
-        $this->init(self::getTableName());
     }
 }

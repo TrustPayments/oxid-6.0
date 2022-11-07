@@ -2,7 +2,7 @@
 
 # OXID 6.X
 
-v1.0.39, 2022-10
+v1.0.40, 2022-11
 
 This repository contains the OXID  Trust Payments payment module that enables the shop to process payments with [Trust Payments](https://www.trustpayments.com/).
 
@@ -33,8 +33,8 @@ Support queries can be issued on the [Trust Payments support site](https://www.t
 
 ## Documentation
 
-* [English](https://plugin-documentation.ep.trustpayments.com/TrustPayments/oxid-6.0/1.0.39/docs/en/documentation.html)
+* [English](https://plugin-documentation.ep.trustpayments.com/TrustPayments/oxid-6.0/1.0.40/docs/en/documentation.html)
 
 ## License
 
-Please see the [license file](https://github.com/TrustPayments/oxid-6.0/blob/1.0.39/LICENSE) for more information.
+Please see the [license file](https://github.com/TrustPayments/oxid-6.0/blob/1.0.40/LICENSE) for more information.
