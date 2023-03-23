@@ -101,7 +101,7 @@ class Order extends Order_parent {
 		$currentState = substr($this->getFieldData('OXTRANSSTATUS'), strlen('TRUSTPAYMENTS_'));
 		$transaction = $this->getTrustPaymentsTransaction();
 
-		if ($currentState === TransactionState::AUTHORIZED && !$transaction->getEmailSent()) {
+		if (!$transaction->getEmailSent()) {
 			return true;
 		}
 
