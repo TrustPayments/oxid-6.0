@@ -175,6 +175,8 @@ class Transaction extends \OxidEsales\Eshop\Core\Model\BaseModel {
 			$transaction = oxNew(\Tru\TrustPayments\Application\Model\Transaction::class);
 			/* @var $transaction \Tru\TrustPayments\Application\Model\Transaction */
 			$transaction->create();
+		} else {
+			$transaction->updateFromSession();
 		}
 		return $transaction;
 	}

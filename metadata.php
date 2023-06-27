@@ -29,7 +29,7 @@ $aModule = array(
         'en' => 'TRU TrustPayments Module'
     ),
     'thumbnail' => 'out/pictures/picture.png',
-    'version' => '1.0.46',
+    'version' => '1.0.47',
     'author' => 'customweb GmbH',
     'url' => 'https://www.customweb.com',
     'email' => 'info@customweb.com',
@@ -148,7 +148,13 @@ $aModule = array(
 			'name' => 'truTrustPaymentsSpaceViewId',
 			'type' => 'str',
 			'value' => ''
-		)
+		),
+        array(
+            'group' => 'truTrustPaymentsShopSettings',
+			'name' => 'truTrustPaymentsMigration',
+			'type' => 'num',
+			'value' => 0,
+        )
     ),
     'events' => array(
         'onActivate' => Tru\TrustPayments\Core\TrustPaymentsModule::class . '::onActivate',
